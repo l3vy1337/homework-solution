@@ -1,0 +1,25 @@
+I divided the app into separate components. This way, it's easier to handle and change things later on.
+
+The application is structured into four main components:
+
+App Component
+    - Root component.
+    - Utilizes React's useState hook to maintain the pizza size, selected toppings, and the total cost.
+    - Handles the logic of cost calculation based on user selections.
+
+SizeSelector Component
+    - Allows users to select the pizza size.
+    - Renders radio buttons dynamically based on size options. Communicates user selection back to the App component.
+
+ToppingsSelector Component
+    - Enables users to choose toppings.
+    - Provides a list of checkboxes for toppings. Maintains a local state for selected toppings and updates the App component accordingly.
+
+SummaryBox Component:
+    - Displays a summary of the user's selections and the total cost.
+    - Receives selected size, toppings, and cost as props and displays them.
+
+
+run:
+    - npm i
+    - npm run dev

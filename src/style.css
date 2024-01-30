@@ -1,0 +1,96 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+}
+
+.App {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 25px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    border: 1px solid #fafafa;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+    justify-content: start;
+    padding: 8px 0;
+}
+
+label.disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    accent-color: #f44336;
+    margin-right: 15px;
+}
+
+input[type="checkbox"] {
+    accent-color: #f44336;
+    margin-right: 15px;
+}
+
+.price {
+    color: #777;
+    margin-left: auto;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.summary {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 10px;
+    padding-top: 15px;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.summary #total-cost {
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+}
